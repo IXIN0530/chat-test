@@ -1,4 +1,4 @@
-import RoomLink from '@/components/threadLink'
+import RoomLink from "@/components/threadLink"
 
 export default async function Index() {
 

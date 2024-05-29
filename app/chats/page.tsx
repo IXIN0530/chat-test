@@ -3,7 +3,6 @@ import { Database } from "@/types/supabasetype"
 import { useEffect, useState } from "react"
 import { supabase } from "@/utils/supabase/supabase"
 import { v4 } from "uuid"
-import { useSearchParams } from "next/navigation"
 import ChatUI from "@/components/chats/chat"
 
 type Props = {
