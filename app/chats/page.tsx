@@ -6,9 +6,12 @@ import { v4 } from "uuid"
 import { useSearchParams } from "next/navigation"
 import ChatUI from "@/components/chats/chat"
 
-export default function Chats() {
-  const searchParams = useSearchParams()
-  let channelName = searchParams.get("channel_name")!!
+type Props = {
+  searchParams: { [key: string]: string | string },
+}
+export default function Chats({ searchParams }: Props) {
+  // let channelName = searchParams.get("channel_name")!!
+  let channelName: string = searchParams.channel_name!!;
   const [inputText, setInputText] = useState("")
   const [inputName, setInputName] = useState("")
   const [messageText, setMessageText] = useState<Database["public"]["Tables"]["Chats"]["Row"][]>([])
