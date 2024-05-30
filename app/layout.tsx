@@ -1,4 +1,4 @@
-import Header from '@/components/header'
+// import Header from '@/components/header'
 import './globals.css'
 
 const defaultUrl = process.env.VERCEL_URL
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="bg-background text-foreground">
-        <Header></Header>
+        {/* <Header></Header> */}
         <main className="pt-14 min-h-screen flex flex-col items-center">
           {children}
         </main>
